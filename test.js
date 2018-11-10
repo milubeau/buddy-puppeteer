@@ -5,6 +5,8 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
   await page.goto('https://buddy.works');
   await page.screenshot({path: 'buddy-screenshot.png'});
-
-  await browser.close();
+  console.log(await page.content()); 
+  setTimeout(async () => await await page.close(), 3600000);
+  setTimeout(async () => await browser.close(), 3610000);
+ 
 })();
